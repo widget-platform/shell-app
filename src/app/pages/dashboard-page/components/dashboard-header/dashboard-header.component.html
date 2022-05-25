@@ -1,0 +1,30 @@
+<div class="wrapper">
+  <h1 class="tui-text_h4 tui-space_left-5 tui-space_top-0 tui-space_bottom-0">WIDGET PLATFORM 1</h1>
+
+  <tui-hosted-dropdown
+    class="menu tui-space_right-1"
+    tuiDropdownAlign="left"
+    [content]="menu"
+    [(open)]="isMenu"
+  >
+    <button
+      tuiIconButton
+      type="button"
+      appearance="flat"
+      icon="tuiIconMoreVertLarge"
+    ></button>
+  </tui-hosted-dropdown>
+</div>
+
+
+<ng-template #menu>
+  <tui-data-list>
+    <button
+      *ngFor="let item of menuList"
+      tuiOption
+      (click)="item.onClick()"
+    >
+      {{item.title}}
+    </button>
+  </tui-data-list>
+</ng-template>

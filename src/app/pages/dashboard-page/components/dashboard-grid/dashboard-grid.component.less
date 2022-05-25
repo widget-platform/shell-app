@@ -1,0 +1,32 @@
+@import '~@taiga-ui/core/styles/taiga-ui-local';
+
+:host {
+  ::ng-deep gridster {
+    background: none;
+
+    .gridster-column, .gridster-row {
+      border-color: var(--tui-base-03);
+    }
+  }
+
+  ::ng-deep .gridster-item-moving {
+    .shadow(1) !important;
+  }
+
+  ::ng-deep gridster-preview {
+    background: var(--tui-base-03);
+  }
+
+  ::ng-deep gridster-item {
+    background: none;
+  }
+}
+
+.template {
+  width: 100%;
+  height: 100%;
+  border: solid 1px var(--tui-base-03);
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: var(--tui-base-01);
+}

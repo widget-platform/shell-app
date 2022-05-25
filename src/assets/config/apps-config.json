@@ -1,0 +1,14 @@
+[
+  {
+    "name": "app_1",
+    "path": "www.wp-host.example:100"
+  },
+  {
+    "name": "app_2",
+    "path": "www.wp-host.example:200"
+  },
+  {
+    "name": "app_3",
+    "path": "www.wp-host.example:300"
+  }
+]
